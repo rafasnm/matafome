@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mata Fome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>🍴 Mata Fome</h1>
+    <p>Encontre seu próximo sabor!</p>
+
+    <h2>O que você está com vontade de comer?</h2>
+
+    <div class="categorias">
+
+    <button onclick="filtrarCategoria('hamburguer')">
+        🍔 Hambúrguer
+    </button>
+
+    <button onclick="filtrarCategoria('pizza')">
+        🍕 Pizza
+    </button>
+
+    <button onclick="filtrarCategoria('japones')">
+        🍣 Japonês
+    </button>
+
+    <button onclick="filtrarCategoria('sobremesa')">
+        🍰 Sobremesa
+    </button>
+
+</div>
+
+    <button class="btn-localização" onclick="obterLocalizacao()">
+        📍 Encontrar perto de mim
+    </button>
+
+    <p id="resultado"></p>
+
+    <button class="btn-camera" onclick="abrirCamera()">
+        📷 Tirar foto do meu prato
+    </button>
+
+    <input
+        type="file"
+        id="camera"
+        accept="image/*"
+        hidden
+    >
+
+    <img id="foto" alt="Foto do prato">
+
+    
+    <section class="restaurantes">
+
+    <h2>🍽️ Lugares para comer</h2>
+
+    <div class="card-restaurante">
+        <h3>🍔 Burger House</h3>
+        <p>⭐ 4,8 • Hambúrguer</p>
+        <p>📍 0,8 km de você</p>
+        <button onclick="mostrarRestaurante('Burger House')">
+            Ver restaurante
+        </button>
+    
+    </div>
+
+    <div class="card-restaurante">
+        <h3>🍕 Pizza Mania</h3>
+        <p>⭐ 4,6 • Pizza</p>
+        <p>📍 1,2 km de você</p>
+        <button onclick="mostrarRestaurante('Pizza Mania')">
+            Ver restaurante
+        </button>
+    </div>
+
+    <div class="card-restaurante">
+        <h3>🍣 Sushi House</h3>
+        <p>⭐ 4,9 • Japonês</p>
+        <p>📍 1,5 km de você</p>
+        <button onclick="mostrarRestaurante('Sushi House')">
+            Ver restaurante
+        </button>
+    </div>
+
+    <div class="card-restaurante">
+    <h3>🍰 Doce Sabor</h3>
+    <p>⭐ 4,7 • Sobremesa</p>
+    <p>📍 1,0 km de você</p>
+
+    <button onclick="mostrarRestaurante('Doce Sabor')">
+        Ver restaurante
+    </button>
+</div>
+
+</section>
+
+<section id="detalhes" class="detalhes">
+
+    <h2 id="nomeRestaurante"></h2>
+
+<p id="infoRestaurante"></p>
+
+<p id="descricaoRestaurante">
+    Um lugar especial para matar a fome e experimentar pratos deliciosos.
+</p>
+
+<div class="informacoes">
+    <p>🍽️ Atendimento no local</p>
+    <p>🥡 Também possui retirada</p>
+    <p>⭐ Avaliação dos clientes</p>
+</div>
+
+<button onclick="compartilharWhatsApp()">
+    💬 Compartilhar no WhatsApp
+</button>
+
+</section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

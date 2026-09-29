@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.categorias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.categoria button {
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 20px 10px;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.categoria button:hover {
+    transform: scale(1.03);
+}
+
+.btn-localizacao {
+    margin-top: 30px;
+    background-color: #ff6b35;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 16px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-localizacao:hover {
+    transform: scale(1.03);
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+#foto {
+    display: none;
+    width: 100%;
+    max-width: 350px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.restaurantes {
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+.restaurantes h2 {
+    margin-bottom: 20px;
+}
+
+.card-restaurante {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 18px;
+    text-align: left;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-restaurante h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.card-restaurante p {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.card-restaurante button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff6b35;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.detalhes {
+    display: none;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.detalhes h2 {
+    margin-bottom: 15px;
+}
+
+.detalhes button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #25D366;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#descricaoRestaurante {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+.informacoes {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.informacoes p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.informacoes p:last-child {
+    margin-bottom: 0;
+}
